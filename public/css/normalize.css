@@ -1,0 +1,14 @@
+:root{
+    --primary: #dd0000;
+    --secondary: #ffce00;
+    --dark: #292929;
+    --light: #e2e2e2;
+
+}
+
+* {
+    margin: 0;
+    color: #e2e2e2;
+    font-family: 'Raleway', sans-serif;
+}
+

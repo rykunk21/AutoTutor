@@ -1,0 +1,132 @@
+:root{
+    --primary: #dd0000 !important;
+    --secondary: #ffce00 !important;
+    --dark: #292929;
+    --light: #e2e2e2;
+
+}
+
+.main {
+    height: 100vh;
+    background: linear-gradient(45deg, var(--dark), #585858 )
+}
+
+
+/*  bootsrap override  */
+.btn {
+    width: 125px;
+    height: 50px;
+    border-radius: 15px !important;
+    color: var(--dark);
+    font-weight: bold !important;
+    background-color: var(--secondary);
+    transition: .3s ease;
+
+}
+
+.btn:hover{
+    color: var(--light);
+    background-color: var(--dark);
+    border: 2px solid #dd0000
+}
+
+/*  Navbar  */
+
+.nav-container{
+    padding: 35px;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 25px;
+    font-size: 1.4em;
+    transition: box-shadow .3s ease, color .3s ease;
+}
+
+.navbar-nav .nav-item:hover{
+    box-shadow: 0 5px 0 #dd0000;
+}
+
+
+/*  landing Text  */
+
+.landing{
+    font-weight: bold;
+}
+
+.landingText{
+    position: relative;
+    top: 150px;
+}
+.landingText h1{
+    font-size: 100px;
+}
+
+.landingImg {
+    position: relative;
+    top: 90px;
+    width: 100%;
+}
+
+.navbar-collapse.show{
+    box-shadow: 0 5px 0 #dd0000;
+    animation: fadein 1s ease;
+}
+
+@media(max-width:430px){
+
+    .landingText{
+        position: static;
+    }
+
+    .landingText h1{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .landingText h4 {
+        text-align: center;
+    }
+
+    .landingImg {
+        display:block;
+        margin: auto;
+        position: relative;
+        top: 60px;
+        width: 80%;
+    }
+    .landingText .btn {
+        display: block;
+        margin: 25px auto 0;
+    }
+}
+
+
+/*  animations  */
+
+.slideIn {
+    animation: slidein 1s ease;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
