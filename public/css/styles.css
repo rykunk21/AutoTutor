@@ -11,6 +11,9 @@
     background: linear-gradient(45deg, var(--dark), #585858 )
 }
 
+.hidden {
+    display: none;
+}
 
 /*  bootsrap override  */
 .btn {
@@ -46,6 +49,10 @@
     box-shadow: 0 5px 0 #dd0000;
 }
 
+#buytt{
+    width: 180px;
+    height: 60px;
+}
 
 /*  landing Text  */
 
@@ -101,10 +108,45 @@
 }
 
 
+
+/*  guild entries */
+
+.guild-search{
+    width: 500px;
+    margin: auto;
+}
+
+.guild-search .btn {
+    border-radius: 0 15px 15px 0 !important;
+}
+
+#searchbar {
+    border-radius: 15px 0 0 15px;
+    height: 50px;
+}
+
+
+.guild-entry{
+    border: 2px solid red;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--light);
+}
+
+.guild-entry h1, p {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.guild-entry .btn {
+    float: right;
+}
+
 /*  animations  */
 
 .slideIn {
-    animation: slidein 1s ease;
+    animation: slidein .5s ease;
 }
 
 @keyframes slidein {

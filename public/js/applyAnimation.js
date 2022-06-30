@@ -17,3 +17,5 @@ let options = {
 let observer = new IntersectionObserver(addSlideIn, options);
 
 observer.observe(document.getElementById('landingContent'));
+observer.observe(document.getElementById('aboutContent'));
+observer.observe(document.getElementById('guildsContent'));
